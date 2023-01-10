@@ -59,9 +59,9 @@ if(isset($_POST['submit'])) {
                 //Create unique file name
                 $fileNewName = uniqid("", true).".".$fileExt;
                 //Define file destination
-                $fileDestination = "/Applications/XAMPP/xamppfiles/htdocs/Indexer/uploads/".$fileNewName;
+                $fileDestination = "/Applications/XAMPP/xamppfiles/htdocs/Assembler/Files PHP/filesystem-explorer/uploads/".$fileNewName;
                 move_uploaded_file($fileNewName, $fileDestination);
-                header("Location: index.php?Success");
+                header("Location: index.php?Success?".$fileNewName);
             } else {
                 echo "File size too large. Maximum allowed size is 5MB.";
             }
