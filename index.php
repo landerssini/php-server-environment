@@ -16,6 +16,12 @@
         <a href="index.php"><img src="assets/logo.png" alt="logo" id="logo"></a>
         <img src="assets/profilePic.png" class="rounded" alt="profilePic" id="profilePic">
     </div>
+    <nav class="navbar navbar-light bg-light" id="searchBar">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
 </body>
 
 </html>
