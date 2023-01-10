@@ -17,10 +17,17 @@
         <img src="assets/profilePic.png" class="rounded" alt="profilePic" id="profilePic">
     </div>
     <nav class="navbar navbar-light bg-light" id="searchBar">
+       
+        <form class="d-flex" action='upload.php' method='POST' enctype='multipart/form-data'>
+            <input class="form-control me-2" type="file" name="file">
+            <button class="btn btn-outline-success mr-4" type="submit" name='submit'>Upload</button>
+        </form>
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        
+        
     </nav>
     <div id="directory">
         <?php
