@@ -1,0 +1,26 @@
+#header{
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+#profilePic{
+    width: 50px;
+    grid-column: 4/5;
+}
+#logo{
+    width: 250px;
+}
+#searchBar{
+    padding-top: 10px;
+    position: absolute;
+    left: 50%;
+}
+#searchBarBox{
+    display: none;
+}
+#searchBar:hover + #searchBarBox{
+    display: block;
+}
